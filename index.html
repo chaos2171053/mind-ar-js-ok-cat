@@ -7,8 +7,6 @@
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image-aframe.prod.js"></script>
 
     <script>
-
-
       const showPortfolio = (done) => {
         const portfolio = document.querySelector("#portfolio-panel");
         const portfolioLeftButton = document.querySelector(
@@ -94,8 +92,7 @@
             console.log("target found");
             showAvatar(() => {
               setTimeout(() => {
-                showPortfolio(() => {
-                });
+                showPortfolio(() => {});
               }, 300);
             });
           });
@@ -227,13 +224,13 @@
           />
           <img
             id="paintandquest-preview"
-            src="https://cdn.jsdelivr.net/gh/chaos2171053/mind-ar-js-ok-cat/assets/portfolio/paintandquest-preview.png"
+            src="https://cdn.jsdelivr.net/gh/chaos2171053/mind-ar-js-ok-cat/assets/portfolio/okcat-preview.jpg"
           />
           <video
             id="paintandquest-video-mp4"
             autoplay="false"
             loop="true"
-            src="https://cdn.jsdelivr.net/gh/chaos2171053/mind-ar-js-ok-cat/assets/portfolio/paintandquest.mp4"
+            src="https://cdn.jsdelivr.net/gh/chaos2171053/mind-ar-js-ok-cat/assets/portfolio/okcat.mp4"
           ></video>
           <video
             id="paintandquest-video-webm"
@@ -243,17 +240,12 @@
           ></video>
           <img
             id="coffeemachine-preview"
-            src="https://cdn.jsdelivr.net/gh/chaos2171053/mind-ar-js-ok-cat/assets/portfolio/coffeemachine-preview.png"
+            src="https://cdn.jsdelivr.net/gh/chaos2171053/mind-ar-js-ok-cat/assets/portfolio/okcat1.jpg"
           />
           <img
             id="peak-preview"
-            src="https://cdn.jsdelivr.net/gh/chaos2171053/mind-ar-js-ok-cat/assets/portfolio/peak-preview.png"
+            src="https://cdn.jsdelivr.net/gh/chaos2171053/mind-ar-js-ok-cat/assets/portfolio/okcat2.jpg"
           />
-
-          <a-asset-item
-            id="avatarModel"
-            src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/examples/image-tracking/assets/card-example/softmind/scene.gltf"
-          ></a-asset-item>
         </a-assets>
 
         <a-camera
@@ -351,7 +343,6 @@
             scale="0.004 0.004 0.004"
             src="#avatarModel"
           ></a-gltf-model>
-
         </a-entity>
       </a-scene>
     </div>
